@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
         setupToolbar()
         sharedPreferences = this.getSharedPreferences("user_data", MODE_PRIVATE)
 
-        val url = "http://192.168.43.188/myapi/api.php"
+        val url = "http://byteseq.com/temp/api.php"
         val queue = Volley.newRequestQueue(this)
         btn_fetch_data.setOnClickListener(){
             if (connectionManager().checkConnectivity(this)){
